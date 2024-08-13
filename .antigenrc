@@ -1,0 +1,30 @@
+
+antigen use prezto
+
+antigen bundle environment # Must be first
+
+antigen bundle helper
+antigen bundle utility # required for the completion module
+
+antigen bundle archive
+antigen bundle command-not-found
+antigen bundle directory
+antigen bundle docker
+antigen bundle git
+antigen bundle node
+antigen bundle python
+antigen bundle ssh
+antigen bundle terminal
+
+antigen bundle completion # Must be loaded AFTER utility and git
+
+antigen bundle fasd # Must be loaded AFTER completion
+
+# Specific load order for highlighting, history substring search, autosuggestions, then prompt
+antigen bundle syntax-highlighting
+antigen bundle history-substring-search
+antigen bundle autosuggestions
+antigen bundle prompt
+
+# Tell Antigen that you're done.
+antigen apply
