@@ -1,0 +1,8 @@
+update-docker () {
+  [array] $images = docker compose images -q
+  docker compose down
+  foreach ($item in $images) {
+    docker image rm $item
+  }
+  docker compose up -d
+}
