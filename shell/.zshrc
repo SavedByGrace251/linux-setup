@@ -5,15 +5,17 @@ SAVEHIST=1000
 bindkey -e
 # End of lines configured by zsh-newuser-install
 
-if [ -f ~/.zsh_aliases ]; then
-    . ~/.zsh_aliases
+if [ -f ~/.setup/.zsh_aliases ]; then
+    . ~/.setup/.zsh_aliases
 fi
 
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 
+eval "$(fasd --init auto)"
+
 source /home/linuxbrew/.linuxbrew/Cellar/antigen/2.2.3/share/antigen/antigen.zsh
-antigen init ~/.antigenrc
+antigen init ~/.setup/.antigenrc
 
-eval "$(oh-my-posh init zsh --config ~/.local/themes/my-theme.omp.json)"
+eval "$(oh-my-posh init zsh --config ~/.setup/my-theme.omp.json)"
 
-export UUID=02330bd0-ae90-4fca-b9e3-469c9c1a7861
+
