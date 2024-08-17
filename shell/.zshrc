@@ -9,6 +9,11 @@ if [ -f ~/.setup/.zsh_aliases ]; then
     . ~/.setup/.zsh_aliases
 fi
 
+
+if [ -f ~/.setup/.zsh_functions ]; then
+    . ~/.setup/.zsh_functions
+fi
+
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 
 eval "$(fasd --init auto)"
