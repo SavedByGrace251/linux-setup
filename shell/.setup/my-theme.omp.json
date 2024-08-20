@@ -16,8 +16,8 @@
           "background": "#3465a4",
           "background_templates": [
             "{{ if .WSL }}#E95420{{ end }}",
-            "{{ if eq .HostName \"Mandelore\" }}#1f2a64{{ end }}",
-            "{{ if eq .HostName \"Endor\" }}#ffbb00{{ end }}",
+            "{{ if eq .HostName \"Mandelore\" }}#ea8b00{{ end }}",
+            "{{ if eq .HostName \"Endor\" }}#1f2a64{{ end }}",
             "{{ if eq .HostName \"death-star\" }}#801414{{ end }}",
             "{{ if eq .HostName \"Kashyyyk\" }}#0a692a{{ end }}",
             "{{ if eq .OS \"windows\" }}#3465a4{{ end }}",
